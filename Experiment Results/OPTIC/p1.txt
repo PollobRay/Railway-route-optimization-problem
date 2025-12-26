@@ -1,0 +1,43 @@
+Number of literals: 98
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%] [110%] [120%] [130%] [140%] [150%] [160%] [170%] [180%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%] [110%] [120%] [130%] [140%] [150%] [160%] [170%] [180%]
+Seeing if metric is defined in terms of task vars or a minimal value of makespan
+- Yes it is
+Recognised a monotonic-change-induced limit on -1.000*<special>
+- Must be >=  the metric
+For limits: literal goal index 0, fact (train-at t1 p2), is static or a precondition
+For limits: literal goal index 1, fact (train-at t2 p6), is static or a precondition
+Looking for achievers for goal index 2, fact (board-passengers t1 p1) with fID 92
+ (board-passenger t1 p1)
+  Looking at numeric effects of (board-passenger t1 p1): 0 and 0
+  No troublesome numerics - looking at conditional effects on (board-passenger t1 p1), of which there are 0
+Looking for achievers for goal index 3, fact (board-passengers t2 p4) with fID 93
+ (board-passenger t2 p4)
+  Looking at numeric effects of (board-passenger t2 p4): 0 and 0
+  No troublesome numerics - looking at conditional effects on (board-passenger t2 p4), of which there are 0
+Action 14 - (board-passenger t1 p1) is uninteresting once we have fact (board-passengers t1 p1)
+Action 15 - (board-passenger t2 p4) is uninteresting once we have fact (board-passengers t2 p4)
+88% of the ground temporal actions in this problem are compression-safe
+Initial heuristic = 7.000, admissible cost estimate 25.003
+b (6.000 | 10.000)b (5.000 | 10.000)b (4.000 | 11.001)b (3.000 | 11.001)b (2.000 | 16.000)b (1.000 | 18.000)(G)
+; LP calculated the cost
+
+; Plan found with metric 26.002
+; Theoretical reachable cost 26.002
+; States evaluated so far: 8
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 0.00
+0.000: (drive-train t2 p3 p4 broad)  [10.000]
+0.000: (drive-train t1 p0 p1 broad)  [10.000]
+10.001: (board-passenger t2 p4)  [1.000]
+10.001: (board-passenger t1 p1)  [1.000]
+11.001: (drive-train t2 p4 p5 broad)  [5.000]
+11.001: (drive-train t1 p1 p2 broad)  [7.000]
+16.002: (drive-train t2 p5 p6 broad)  [10.000]
+
+ * All goal deadlines now no later than 26.002
+
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+b (6.000 | 10.000)b (5.000 | 10.000)b (4.000 | 11.001)b (3.000 | 11.001)b (2.000 | 18.000)
+

@@ -1,0 +1,20 @@
+Number of literals: 137
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%] [110%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%] [110%]
+No analytic limits found, not considering limit effects of goal-only operators
+91% of the ground temporal actions in this problem are compression-safe
+Initial heuristic = 10.000
+b (9.000 | 5.000)b (8.000 | 10.000)b (7.000 | 10.000)b (6.000 | 10.000)b (5.000 | 11.001)b (4.000 | 11.001)b (3.000 | 11.001)b (2.000 | 16.001)b (1.000 | 18.001);;;; Solution Found
+; States evaluated: 11
+; Cost: 26.002
+; Time 0.00
+0.000: (drive-train t3 p7 p8 meter)  [5.000]
+0.000: (drive-train t2 p3 p4 broad)  [10.000]
+0.000: (drive-train t1 p0 p1 broad)  [10.000]
+5.001: (board-passenger t3 p8)  [1.000]
+6.001: (drive-train t3 p8 p9 meter)  [5.000]
+10.001: (board-passenger t2 p4)  [1.000]
+10.001: (board-passenger t1 p1)  [1.000]
+11.001: (drive-train t2 p4 p5 broad)  [5.000]
+11.001: (drive-train t1 p1 p2 broad)  [7.000]
+16.002: (drive-train t2 p5 p6 broad)  [10.000

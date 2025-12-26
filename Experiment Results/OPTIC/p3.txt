@@ -1,0 +1,61 @@
+Number of literals: 193
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%] [110%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%] [110%]
+Seeing if metric is defined in terms of task vars or a minimal value of makespan
+- Yes it is
+Recognised a monotonic-change-induced limit on -1.000*<special>
+- Must be >=  the metric
+For limits: literal goal index 0, fact (train-at t1 p2), is static or a precondition
+For limits: literal goal index 1, fact (train-at t2 p6), is static or a precondition
+For limits: literal goal index 2, fact (train-at t3 p9), is static or a precondition
+For limits: literal goal index 3, fact (train-at t4 p12), is static or a precondition
+Looking for achievers for goal index 4, fact (board-passengers t1 p1) with fID 181
+ (board-passenger t1 p1)
+  Looking at numeric effects of (board-passenger t1 p1): 0 and 0
+  No troublesome numerics - looking at conditional effects on (board-passenger t1 p1), of which there are 0
+Looking for achievers for goal index 5, fact (board-passengers t2 p4) with fID 183
+ (board-passenger t2 p4)
+  Looking at numeric effects of (board-passenger t2 p4): 0 and 0
+  No troublesome numerics - looking at conditional effects on (board-passenger t2 p4), of which there are 0
+Looking for achievers for goal index 6, fact (board-passengers t3 p8) with fID 184
+ (board-passenger t3 p8)
+  Looking at numeric effects of (board-passenger t3 p8): 0 and 0
+  No troublesome numerics - looking at conditional effects on (board-passenger t3 p8), of which there are 0
+Looking for achievers for goal index 7, fact (board-passengers t4 p11) with fID 182
+ (board-passenger t4 p11)
+  Looking at numeric effects of (board-passenger t4 p11): 0 and 0
+  No troublesome numerics - looking at conditional effects on (board-passenger t4 p11), of which there are 0
+Action 26 - (board-passenger t1 p1) is uninteresting once we have fact (board-passengers t1 p1)
+Action 27 - (board-passenger t4 p11) is uninteresting once we have fact (board-passengers t4 p11)
+Action 28 - (board-passenger t2 p4) is uninteresting once we have fact (board-passengers t2 p4)
+Action 29 - (board-passenger t3 p8) is uninteresting once we have fact (board-passengers t3 p8)
+88% of the ground temporal actions in this problem are compression-safe
+Initial heuristic = 13.000, admissible cost estimate 25.003
+b (12.000 | 5.000)b (11.000 | 10.000)b (10.000 | 10.000)b (9.000 | 10.000)b (8.000 | 10.000)b (7.000 | 11.001)b (6.000 | 11.001)b (5.000 | 16.000)b (4.000 | 16.000)b (3.000 | 16.000)b (2.000 | 16.000)b (1.000 | 18.000)(G)
+; LP calculated the cost
+
+; Plan found with metric 26.002
+; Theoretical reachable cost 26.002
+; States evaluated so far: 14
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 0.01
+0.000: (drive-train t3 p7 p8 meter)  [5.000]
+0.000: (drive-train t2 p3 p4 broad)  [10.000]
+0.000: (drive-train t4 p10 p11 broad)  [9.000]
+0.000: (drive-train t1 p0 p1 broad)  [10.000]
+5.001: (board-passenger t3 p8)  [1.000]
+6.001: (drive-train t3 p8 p9 meter)  [5.000]
+9.001: (board-passenger t4 p11)  [1.000]
+10.001: (drive-train t4 p11 p12 broad)  [6.000]
+10.001: (board-passenger t2 p4)  [1.000]
+10.001: (board-passenger t1 p1)  [1.000]
+11.001: (drive-train t2 p4 p5 broad)  [5.000]
+11.001: (drive-train t1 p1 p2 broad)  [7.000]
+16.002: (drive-train t2 p5 p6 broad)  [10.000]
+
+ * All goal deadlines now no later than 26.002
+
+Resorting to best-first search
+Running WA* with W = 5.000, not restarting with goal states
+b (12.000 | 10.000)b (12.000 | 5.000)b (11.000 | 10.000)b (10.000 | 10.000)b (9.000 | 10.000)b (8.000 | 10.000)b (7.000 | 11.001)b (7.000 | 10.001)b (6.000 | 11.001)b (5.000 | 16.000)b (5.000 | 11.001)b (4.000 | 16.000)b (3.000 | 16.000)b (2.000 | 18.000)
+
